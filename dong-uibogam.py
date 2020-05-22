@@ -21,7 +21,7 @@ browser.find_element_by_css_selector(".login form button").click()
 browser.get("https://lib.jeonnam.go.kr/bbs/board.php?bo_table=subscription_service#")
 browser.execute_script("krpia_open(3516)")
 browser.close()
-browser.switch_to.window(driver.window_handles[-1])
+browser.switch_to.window(browser.window_handles[-1])
 browser.get("https://www.krpia.co.kr/product/main?plctId=PLCT00004558#none")
 browser.get("https://www.krpia.co.kr/viewer?plctId=PLCT00004558&tabNodeId=NODE03923082")
 
