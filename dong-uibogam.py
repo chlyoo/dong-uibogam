@@ -22,18 +22,21 @@ browser.get("https://lib.jeonnam.go.kr/bbs/board.php?bo_table=subscription_servi
 browser.execute_script("krpia_open(3516)")
 browser.close()
 browser.switch_to.window(browser.window_handles[-1])
+browser.implicitly_wait(3)
 browser.get("https://www.krpia.co.kr/product/main?plctId=PLCT00004558#none")
-browser.get("https://www.krpia.co.kr/viewer?plctId=PLCT00004558&tabNodeId=NODE03923082")
+browser.find_element_by_xpath("/html/body/div[2]/div[3]/div/div[1]/div/div/div[3]/div[2]/a").click()
+
+#browser.get("https://www.krpia.co.kr/viewer?plctId=PLCT00004558&tabNodeId=NODE03923082")
 
 #browser.implicitly_wait(3)
 
 
 
 # 게시판 글 읽기
-#browser.get(f"https://hisnet.handong.edu/cis/list.php?Board=KYOM_EXTRA&CateCode=2959")
 
 #browser.get(f"https://hisnet.handong.edu/cis/write.php?Board=KYOM_EXTRA&CateCode=2959&dflag=")
-#browser.find_element_by_name('subject').send_keys('loveetls')
+#browser#browser.get(f"https://hisnet.handong.edu/cis/list.php?Board=KYOM_EXTRA&CateCode=2959")
+
 
 #WebElement formElement = driver.findElement(By.name("form_w"));
 #List<WebElement> allFormChildElements = formElement.findElements(By.xpath("*"));
